@@ -7,7 +7,7 @@ Usage
 =====
 
 It is used like any other jQuery plugin:
-<pre>
+```html
     <div id="table"></div>
     <script type="text/javascript">
         $('#table').jk_table({
@@ -15,18 +15,18 @@ It is used like any other jQuery plugin:
             'colsurl': '/some/url/cols'
         });
     </script>
-</pre>
+```
 
 `colsurl` is a controller expected to return a json in the form 
-<pre>
+```
     [
         {"id": 0, name": "foo", "verboseName":"Foo", "width":"50px"},
         {"id": 1, name": "bar"}
     ]
-</pre>
+```
 
 `rowsurl` is a controller expected to return a json in the form
-<pre>
+```
     {
         "nrows": 10,  // number of rows in this json
         "page": 1,    // number of the page this json contains
@@ -38,7 +38,7 @@ It is used like any other jQuery plugin:
             ...
         ]
     }
-</pre>
+```
 
 Both urls will be called with the query parameters:
 
