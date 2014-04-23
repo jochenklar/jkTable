@@ -47,3 +47,4 @@ Both urls will be called with the query parameters:
 + `sort` a parameter for sorting in the form 'name ASC' or 'name DESC'
 + `search` a string to be searched (in all columns)
 
+More documentation will follow someday ...
